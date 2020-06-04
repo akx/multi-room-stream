@@ -14,6 +14,8 @@ Setup (admins)
 --------------
 
 * Copy `multiroom.liq.example` to `multiroom.liq`; configure the room names and passwords as desired.
+* Edit `docker-compose.yml` file to change the default Icecast source password `hackme` (both instances of it)
+  to something unique and hard-to-guess.
 * Run `docker-compose up`.
 * Ensure listeners can connect to port 8000 (which should already show you the Icecast UI), and sources can connect to 8080.
 
