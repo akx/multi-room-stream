@@ -3,6 +3,13 @@ Multiroom pubsub audio stream thing
 
 This [Liquidsoap](https://github.com/savonet/liquidsoap) + Icecast + Docker-Compose setup lets multiple users cast audio into separate "rooms" via Icecast/Shoutcast, to be listened to by other people.
 
+Features
+--------
+
+* Easy Docker Compose setup
+* Multiple "rooms" per server, declared in a simple Liquidsoap configuration file
+* Automagical saving of livestreamed content
+
 Setup (admins)
 --------------
 
