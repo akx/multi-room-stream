@@ -13,6 +13,8 @@ Features
 Setup (admins)
 --------------
 
+* Clone this repository somewhere. Note that you should have ample space wherever you do, since recordings
+  of streamed content will end up in `storage/`.
 * Copy `multiroom.liq.example` to `multiroom.liq`; configure the room names and passwords as desired.
 * Edit `docker-compose.yml` file to change the default Icecast source password `hackme` (both instances of it)
   to something unique and hard-to-guess.
