@@ -23,6 +23,12 @@ Setup (admins)
 
 By default, all streams are up all the time; if no one is connected, they just output silence. This could be made optional in a future release.
 
+### Configuration
+
+Beyond just the declarative configuration of rooms in the `multiroom.liq` file, the `libmultiroom.liq` file reads some bits from environment variables. Most of these are already correctly set for you by the Docker Compose file, but there's a couple tweakable bits:
+
+* `STORAGE_SPLIT_METADATA`: Set this to `1` or suchlike if you'd like new storage files to be created when the source metadata (tag) changes.
+
 Setup (sources)
 ---------------
 
