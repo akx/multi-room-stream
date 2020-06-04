@@ -12,6 +12,8 @@ services:
       ICECAST_PORT: 8000
       INPUT_PORT: 8080
       ICECAST_SOURCE_PASSWORD: mdiogvmzgiosf8w248wws
+      STORAGE_ROOT: /liq/storage
+      STORAGE_SPLIT_METADATA: 0
   icecast:
     image: "infiniteproject/icecast:latest"
     environment:
