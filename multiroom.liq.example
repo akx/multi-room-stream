@@ -1,0 +1,4 @@
+%include "libmultiroom.liq"
+decl_room("bedroom", "johannes")
+decl_room("kitchen", "hernekeitto")
+decl_room("bathroom", "viina")

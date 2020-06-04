@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  liquidsoap:
+    image: "phasecorex/liquidsoap:latest"
+    command: "/liq/multiroom.liq"
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/liq
+    environment:
+      ICECAST_HOST: icecast
+      ICECAST_PORT: 8000
+      INPUT_PORT: 8080
+      ICECAST_SOURCE_PASSWORD: mdiogvmzgiosf8w248wws
+  icecast:
+    image: "infiniteproject/icecast:latest"
+    environment:
+      ICECAST_SOURCE_PASSWORD: mdiogvmzgiosf8w248wws
+      ICECAST_ADMIN_EMAIL: admin@example.com
+      ICECAST_LOCATION: Earth
+      ICECAST_HOSTNAME: localhost
+    ports:
+      - "8000:8000"
+    # ICECAST_SOURCE_PASSWORD, ICECAST_ADMIN_PASSWORD, ICECAST_RELAY_PASSWORD
+    # ICECAST_ADMIN_USERNAME
+    # ICECAST_MAX_CLIENTS, ICECAST_MAX_SOURCES
